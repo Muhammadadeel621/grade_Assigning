@@ -1,0 +1,37 @@
+void main() {
+
+ // CLASS II ASSIGNMENT MAKE MARKSHEET USING IF ELSE STATEMENTS 
+num english = 80 ;
+num math = 90 ;
+num cs = 80 ;
+num calculus = 85 ;
+num physics = 90 ;
+num sum = 500 ;
+num total = english + math + cs + calculus + physics ;
+num percent = (total/sum) * 100 ;
+String grade = "" ;
+if(percent >= 80 && percent <= 100){
+  grade = "A+";
+}
+else if(percent >= 70 && percent < 80){
+  grade = "A" ;
+}
+else if(percent >= 60 && percent < 70){
+ grade = "B" ;
+}
+else if(percent >= 50 && percent < 60){
+  grade = "C" ;
+}
+else if(percent >= 40 && percent < 50){
+  grade = "D" ;
+}
+else{
+  grade = "FAIL";
+}
+print("Total marks = $sum") ;
+print("Obtained Marks is : $total") ;
+print("my percentage is : $percent%");
+print("THE GRADE IS : $grade");
+
+}
+
